@@ -14,4 +14,5 @@ Diff:
  - other replaces for modern constructions
  
  Lic:
- Feel free to do anything you want with it, no warrant it will work or will not harm you
+ 
+ Feel free to do anything you want with it, no warranty it will work or will not harm you
