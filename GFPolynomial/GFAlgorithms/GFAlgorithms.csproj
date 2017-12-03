@@ -7,8 +7,8 @@
     <ProjectGuid>{00A1DC9B-BC0C-4C8E-AC1B-B59ED192DCD8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GFPolynomial</RootNamespace>
-    <AssemblyName>GFPolynomial</AssemblyName>
+    <RootNamespace>GFAlgorithms</RootNamespace>
+    <AssemblyName>GFAlgorithms</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
