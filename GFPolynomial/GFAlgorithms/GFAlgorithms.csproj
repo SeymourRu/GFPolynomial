@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{00A1DC9B-BC0C-4C8E-AC1B-B59ED192DCD8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GFPolynomial</RootNamespace>
+    <AssemblyName>GFPolynomial</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BiVariablePolys\BiVariableMonomialsComparer.cs" />
+    <Compile Include="BiVariablePolys\BiVariablePolynomial.cs" />
+    <Compile Include="CombinationsCountCalculators\ICombinationsCountCalculator.cs" />
+    <Compile Include="CombinationsCountCalculators\PascalsTriangleBasedCalcualtor.cs" />
+    <Compile Include="ComplementaryFilterBuilders\GcdBasedBuilder.cs" />
+    <Compile Include="ComplementaryFilterBuilders\IComplementaryFiltersBuilder.cs" />
+    <Compile Include="Exts\ArraysExtensions.cs" />
+    <Compile Include="Exts\BiVariablePolynomialExtensions.cs" />
+    <Compile Include="Exts\PolynomialsAlgorithmsExtensions.cs" />
+    <Compile Include="LinearSystemSolvers\GaussSolver.cs" />
+    <Compile Include="LinearSystemSolvers\ILinearSystemSolver.cs" />
+    <Compile Include="LinearSystemSolvers\SystemSolution.cs" />
+    <Compile Include="PolynomialsGcdFinders\GcdExtendedResult.cs" />
+    <Compile Include="PolynomialsGcdFinders\GcdWithQuotients.cs" />
+    <Compile Include="PolynomialsGcdFinders\IPolynomialsGcdFinder.cs" />
+    <Compile Include="PolynomialsGcdFinders\RecursiveGcdFinder.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GfPolynoms\GFPolynoms.csproj">
+      <Project>{9d263cc7-6fb9-4575-96cf-8869d3ee1816}</Project>
+      <Name>GFPolynoms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NameOfFix\NameOfFix.csproj">
+      <Project>{4c12d7d1-5ac3-4d41-8920-c11767ed0ddb}</Project>
+      <Name>NameOfFix</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

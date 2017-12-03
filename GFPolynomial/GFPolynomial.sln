@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GFAlgorithms", "GFAlgorithms\GFAlgorithms.csproj", "{00A1DC9B-BC0C-4C8E-AC1B-B59ED192DCD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GFPolynoms", "GfPolynoms\GFPolynoms.csproj", "{9D263CC7-6FB9-4575-96CF-8869D3EE1816}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RsCodesTools", "RsCodesTools\RsCodesTools.csproj", "{D7206CE2-E84F-454F-AAFC-F594EE9C0094}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utils", "Utils", "{8D7F21AF-694D-48B7-B6B1-6DEC24E89C9C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SpectrumAnalyzer", "SpectrumAnalyzer", "{09A5E4E4-5965-48A7-99C5-3C39CE4EC927}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpectrumAnalyzer", "Utils\SpectrumAnalyzer\SpectrumAnalyzer\SpectrumAnalyzer.csproj", "{E50854EB-B009-473A-9EFB-1AF8FFD769A8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WaveletCodesListDecodingAnalyzer", "WaveletCodesListDecodingAnalyzer", "{1FE63331-8573-47C5-BE31-4341635AC3E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaveletCodesListDecodingAnalyzer", "Utils\WaveletCodesListDecodingAnalyzer\WaveletCodesListDecodingAnalyzer\WaveletCodesListDecodingAnalyzer.csproj", "{CEE6FB2A-5150-40EA-8B74-60E1488CF131}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaveletCodesTools", "WaveletCodesTools\WaveletCodesTools.csproj", "{8B766D76-5C41-4555-924E-51FFC704FB6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NameOfFix", "NameOfFix\NameOfFix.csproj", "{4C12D7D1-5AC3-4D41-8920-C11767ED0DDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00A1DC9B-BC0C-4C8E-AC1B-B59ED192DCD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00A1DC9B-BC0C-4C8E-AC1B-B59ED192DCD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00A1DC9B-BC0C-4C8E-AC1B-B59ED192DCD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00A1DC9B-BC0C-4C8E-AC1B-B59ED192DCD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D263CC7-6FB9-4575-96CF-8869D3EE1816}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D263CC7-6FB9-4575-96CF-8869D3EE1816}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D263CC7-6FB9-4575-96CF-8869D3EE1816}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D263CC7-6FB9-4575-96CF-8869D3EE1816}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7206CE2-E84F-454F-AAFC-F594EE9C0094}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7206CE2-E84F-454F-AAFC-F594EE9C0094}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7206CE2-E84F-454F-AAFC-F594EE9C0094}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7206CE2-E84F-454F-AAFC-F594EE9C0094}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E50854EB-B009-473A-9EFB-1AF8FFD769A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E50854EB-B009-473A-9EFB-1AF8FFD769A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E50854EB-B009-473A-9EFB-1AF8FFD769A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E50854EB-B009-473A-9EFB-1AF8FFD769A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEE6FB2A-5150-40EA-8B74-60E1488CF131}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEE6FB2A-5150-40EA-8B74-60E1488CF131}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEE6FB2A-5150-40EA-8B74-60E1488CF131}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEE6FB2A-5150-40EA-8B74-60E1488CF131}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B766D76-5C41-4555-924E-51FFC704FB6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B766D76-5C41-4555-924E-51FFC704FB6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B766D76-5C41-4555-924E-51FFC704FB6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B766D76-5C41-4555-924E-51FFC704FB6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C12D7D1-5AC3-4D41-8920-C11767ED0DDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C12D7D1-5AC3-4D41-8920-C11767ED0DDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C12D7D1-5AC3-4D41-8920-C11767ED0DDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C12D7D1-5AC3-4D41-8920-C11767ED0DDB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{09A5E4E4-5965-48A7-99C5-3C39CE4EC927} = {8D7F21AF-694D-48B7-B6B1-6DEC24E89C9C}
+		{1FE63331-8573-47C5-BE31-4341635AC3E6} = {8D7F21AF-694D-48B7-B6B1-6DEC24E89C9C}
+		{E50854EB-B009-473A-9EFB-1AF8FFD769A8} = {09A5E4E4-5965-48A7-99C5-3C39CE4EC927}
+		{CEE6FB2A-5150-40EA-8B74-60E1488CF131} = {1FE63331-8573-47C5-BE31-4341635AC3E6}
+	EndGlobalSection
+EndGlobal

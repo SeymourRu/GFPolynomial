@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8B766D76-5C41-4555-924E-51FFC704FB6C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WaveletCodesTools</RootNamespace>
+    <AssemblyName>WaveletCodesTools</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Decoding\FixedDistanceCodesDecoderBase.cs" />
+    <Compile Include="Decoding\ListDecoderForFixedDistanceCodes\GsBasedDecoder.cs" />
+    <Compile Include="Decoding\ListDecoderForFixedDistanceCodes\GsBasedDecoderDependencies\IGsBasedDecoderTelemetryCollector.cs" />
+    <Compile Include="Decoding\ListDecoderForFixedDistanceCodes\IListDecoder.cs" />
+    <Compile Include="Decoding\StandartDecoderForFixedDistanceCodes\IDecoder.cs" />
+    <Compile Include="Decoding\StandartDecoderForFixedDistanceCodes\InformationPolynomialWasNotFoundException.cs" />
+    <Compile Include="Decoding\StandartDecoderForFixedDistanceCodes\RsBasedDecoder.cs" />
+    <Compile Include="Encoding\Encoder.cs" />
+    <Compile Include="Encoding\IEncoder.cs" />
+    <Compile Include="GeneratingPolynomialsBuilder\IGeneratingPolynomialsBuilder.cs" />
+    <Compile Include="GeneratingPolynomialsBuilder\LiftingSchemeBasedBuilder.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GFAlgorithms\GFAlgorithms.csproj">
+      <Project>{00a1dc9b-bc0c-4c8e-ac1b-b59ed192dcd8}</Project>
+      <Name>GFAlgorithms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GfPolynoms\GFPolynoms.csproj">
+      <Project>{9d263cc7-6fb9-4575-96cf-8869d3ee1816}</Project>
+      <Name>GFPolynoms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NameOfFix\NameOfFix.csproj">
+      <Project>{4c12d7d1-5ac3-4d41-8920-c11767ed0ddb}</Project>
+      <Name>NameOfFix</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RsCodesTools\RsCodesTools.csproj">
+      <Project>{d7206ce2-e84f-454f-aafc-f594ee9c0094}</Project>
+      <Name>RsCodesTools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
