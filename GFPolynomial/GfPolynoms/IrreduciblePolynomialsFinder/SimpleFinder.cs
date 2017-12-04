@@ -50,6 +50,19 @@ namespace IrreduciblePolynomialsFinder
         }
 
         /// <summary>
+        /// Method for creation initialization polynomial for brute force search
+        /// </summary>
+        /// <param name="field">Polynomial field</param>
+        /// <param name="degree">Polynomial degree</param>
+        private static GFPolynoms.Polynomial GenerateTemplateGFPolynomial(GaloisField field, int degree)
+        {
+            var templatePolynomial = new GFPolynoms.Polynomial(field, 1).RightShift(degree);
+            templatePolynomial[0] = 1;
+
+            return templatePolynomial;
+        }
+
+        /// <summary>
         /// Method for finding irreducible polynomial degree <paramref name="degree"/> with coefficients from field with order <paramref name="fieldOrder"/>
         /// </summary>
         /// <param name="fieldOrder">Field order from which irreducible polynomials coefficients come</param>

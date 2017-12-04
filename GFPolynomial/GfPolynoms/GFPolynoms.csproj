@@ -45,6 +45,8 @@
     <Compile Include="GaloisFields\GaloisField.cs" />
     <Compile Include="GaloisFields\PrimeOrderField.cs" />
     <Compile Include="GaloisFields\PrimePowerOrderField.cs" />
+    <Compile Include="GaloisFields\RealGFField.cs" />
+    <Compile Include="IrreduciblePolynomialsFinder\GFFinder.cs" />
     <Compile Include="IrreduciblePolynomialsFinder\IIrreduciblePolynomialsFinder.cs" />
     <Compile Include="IrreduciblePolynomialsFinder\SimpleFinder.cs" />
     <Compile Include="Polynomial.cs" />
